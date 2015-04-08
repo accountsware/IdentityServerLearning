@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Web;
 using System.Collections.Generic;
 using Thinktecture.IdentityServer.Core;
@@ -18,24 +19,21 @@ namespace IdentityServerLearning.Identity.Configuration
                 
                 new Client()
                 {
-                 ClientId   = @"implicitclient",
-                 ClientName = @"Web Application",
+                 ClientName = "ConsoleApp",
+                    ClientId = "Console", 
                  Enabled    = true,
-                 RequireConsent = true,
-                 AllowRememberConsent = true,
-                 RedirectUris = new List<string>{"https://localhost:44301/"},
-                 PostLogoutRedirectUris = new List<string>{"https://localhost:44301/"},
-                 ScopeRestrictions = new List<string>
-                        {
-                            Constants.StandardScopes.OpenId,
-                            Constants.StandardScopes.Profile,
-                            Constants.StandardScopes.Email
-                        },
-                AccessTokenType = AccessTokenType.Jwt,
-                AccessTokenLifetime = 5000
-
+                    Flow = Flows.ClientCredentials,
+                 
+                 
+                 
+                AccessTokenType = AccessTokenType.Reference,
+                ClientSecrets = new List<ClientSecret>
+                    {
+                    new ClientSecret("mysecret".Sha256())
+                    }
+                
+                
                 }
-
             };
         } 
 

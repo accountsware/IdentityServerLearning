@@ -8,16 +8,20 @@ using Thinktecture.IdentityServer.Core.Configuration;
 
 namespace IdentityServerLearning.Identity
 {
-    public sealed class Startup
+    public class Startup
     {
         public void Configuration(IAppBuilder app)
         {
+            
             app.Map("/myHome",
                 coreApp => coreApp.UseIdentityServer(new IdentityServerOptions
                 {
-                    SiteName = "MBS Identity Server",
-                    SigningCertificate = Cert.Load(),
-                    Factory = InMemoryFactory.Create(Users.Get(), Clients.Get(), Scopes.Get()),
+                 //   SiteName = "MBS Identity Server",
+                    //SigningCertificate = Cert.Load(),
+                     Factory =  InMemoryFactory.Create(
+                users: Users.Get(),
+                clients: Clients.Get(),
+                scopes: Scopes.Get()),
                     RequireSsl = true
                 }));
 

@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("IdentityServerLearning")]
+[assembly: AssemblyTitle("IdentityServerLearning.WebApi")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Microsoft")]
-[assembly: AssemblyProduct("IdentityServerLearning")]
+[assembly: AssemblyProduct("IdentityServerLearning.WebApi")]
 [assembly: AssemblyCopyright("Copyright © Microsoft 2015")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("1a057fc9-af9f-4123-851b-941878ef58a6")]
+[assembly: Guid("93e3d6fe-1f69-4292-b9fc-bafd935e27ef")]
 
 // Version information for an assembly consists of the following four values:
 //

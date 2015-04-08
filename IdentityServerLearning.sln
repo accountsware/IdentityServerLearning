@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerLearning.Web", "IdentityServerLearning.Web\IdentityServerLearning.Web.csproj", "{ADBC8666-FA94-4C59-A8BD-3B74C7EAD177}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerLearning.Identity", "IdentityServerLearning.Identity\IdentityServerLearning.Identity.csproj", "{BB628469-673B-4F33-AF7A-4ABB51C3CD9C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerLearning.WebApi", "IdentityServerLearning.WebApi\IdentityServerLearning.WebApi.csproj", "{E8AF327E-4F9E-4D80-B3AD-00C7E6C8A8B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerLearning.Console", "IdentityServerLearning.Console\IdentityServerLearning.Console.csproj", "{9E8279E9-EBFD-42AB-B687-4A99642A2334}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentityServerLearning.Constants", "IdentityServerLearning.Constants\IdentityServerLearning.Constants.csproj", "{D61573CF-67D9-4237-951E-64F166FE292F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +17,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{ADBC8666-FA94-4C59-A8BD-3B74C7EAD177}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ADBC8666-FA94-4C59-A8BD-3B74C7EAD177}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ADBC8666-FA94-4C59-A8BD-3B74C7EAD177}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ADBC8666-FA94-4C59-A8BD-3B74C7EAD177}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BB628469-673B-4F33-AF7A-4ABB51C3CD9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BB628469-673B-4F33-AF7A-4ABB51C3CD9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB628469-673B-4F33-AF7A-4ABB51C3CD9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB628469-673B-4F33-AF7A-4ABB51C3CD9C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8AF327E-4F9E-4D80-B3AD-00C7E6C8A8B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8AF327E-4F9E-4D80-B3AD-00C7E6C8A8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8AF327E-4F9E-4D80-B3AD-00C7E6C8A8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8AF327E-4F9E-4D80-B3AD-00C7E6C8A8B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9E8279E9-EBFD-42AB-B687-4A99642A2334}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9E8279E9-EBFD-42AB-B687-4A99642A2334}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9E8279E9-EBFD-42AB-B687-4A99642A2334}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9E8279E9-EBFD-42AB-B687-4A99642A2334}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D61573CF-67D9-4237-951E-64F166FE292F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D61573CF-67D9-4237-951E-64F166FE292F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D61573CF-67D9-4237-951E-64F166FE292F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D61573CF-67D9-4237-951E-64F166FE292F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
